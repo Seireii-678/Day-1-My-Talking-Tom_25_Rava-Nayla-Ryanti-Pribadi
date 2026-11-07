@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Task Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="planner">
+    <header class="planner__head">
+      <h1>Student Task Planner</h1>
+      <p id="summary" class="summary" aria-live="polite"></p>
+    </header>
+
+    <div class="filters" role="group" aria-label="Filter assignments">
+      <button class="filter is-active" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter" data-filter="pending" aria-pressed="false">Pending</button>
+      <button class="filter" data-filter="completed" aria-pressed="false">Completed</button>
+    </div>
+
+    <ul id="list" class="list"></ul>
+    <p id="empty" class="empty" hidden>No assignments here. Try another filter.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
